@@ -1,0 +1,285 @@
+/* Barra de navegacion */
+.navbar {
+  padding: 1.5rem;
+  background-color: #d8b476;;
+}
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar a{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+.navbar img{
+  border-radius: 50%;
+  border: 2px solid #131c3b;
+}
+.navbar button{
+  color: #131c3b;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+.menu{
+  background-color: #131c3b;
+}
+.menu a{
+  color: #e6ddb4;
+}
+
+/* Principal */
+.Principal section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Principal h1 {
+  font-size: 8rem;
+  font-family: 'Dancing Script', cursive;
+  color: #c49a41;
+}
+.efecto-linea::after,.efecto-linea::before{
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 5px;
+  background-color: #c49a41;
+}
+.efecto-linea::before{
+  position: relative;
+  left: -30px;
+  top: -20px;
+}
+.efecto-linea::after{
+  position: relative;
+  left: 20px;
+  top: -20px;
+}
+
+.Principal {
+  background-color: #fffdf6;
+  min-height: 450px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.Principal img {
+  width: 470px;
+  height: 470px;
+  margin: 0px;
+  padding-top: 30px;
+
+}
+
+.Principal h2 {
+  padding-top: 20px;
+  font-size: 5rem;
+  font-family: 'Cinzel', serif;
+  color: rgb(121, 84, 17);
+  font-weight: bold;
+}
+
+/* Seccion tienda */
+.Tienda h1{
+  padding-top: 60px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+  color: rgb(121, 84, 17);
+}
+
+.Tienda img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+  
+}
+
+.Tienda .contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.contenedor:hover img {
+  opacity: 0.2;
+}
+
+.contenedor:hover .overlay {
+  opacity: 1;
+}
+
+/* Seccion Contacto */
+.Contacto {
+  color: #1a1f3c;
+  background-color: #e6ddb4;
+  height: 800px;
+  padding: 10px;
+  
+}
+.Contacto .contenedor {
+  max-width: 700px;
+  text-align: center;
+}
+.form-area{
+  padding-top: 8%;
+}
+.row.single-form{
+  box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+  background: #fff;
+}
+.left{
+  background: #131c3b;
+  padding: 250px 93px;
+}
+.left h2{
+  font-family: poppins;
+  color: #fff;
+  font-weight: 700;
+  font-size: 45px;
+}
+.left h2 span{
+  font-weight: 100;
+}
+.right{
+  padding: 150px 100px;
+  position: relative;
+}
+.right i{
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #fff;
+}
+.form-control{
+  border: 1px solid #000;
+}
+.right button{
+  border: none;
+  border-radius: 5;
+  background: #1a1f3c;
+  width: 180px;
+  color: #fff;
+  padding: 15px 0;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.right button:hover{
+  background: #e6ddb4;
+  color: #1a1f3c;
+}
+/* Responsive de formulario */
+@media (min-width: 768px) and (max-width: 991px){
+  .left{
+    padding: 80px 30px;
+    text-align: center;
+  }
+  .left h2{
+    font-size: 45px;
+  }
+  .right{
+    padding: 25px;
+  }
+  .right i{
+    top: -25px;
+    transform: rotate(90deg);
+    left: 45%;
+  }
+  .right button{
+    width: 170px;
+    padding: 20px 10px;
+  }
+  
+}
+
+/* mapa */
+.mapa{
+  margin: 0 auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.donde{
+  padding-top: 50px;
+  background-color: #e6ddb4;
+}
+
+
+/* Responsive linea efecto */
+@media screen and (max-width: 924px) {
+  .efecto-linea::after,.efecto-linea::before{
+    width: 0px;
+  }
+  
+}
+
+@media (max-width: 767px){
+  .left{
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2{
+    font-size: 25px;
+  }
+  .right{
+    padding: 25px;
+  }
+  .right i{
+    top: -25px;
+    transform: rotate(90deg);
+    left: 45%;
+  }
+  .right button{
+    width: 150px;
+    padding: 12px 0;
+  }
+  .navbar-brand {
+    display: none;
+  } 
+  /* reponsive mapa */
+  .mapa{
+    width: 650px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .mapa{
+    width: 400px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mapa{
+    width: 200px;
+    height: 200px;
+  }
+}
