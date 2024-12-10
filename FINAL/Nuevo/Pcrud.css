@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background: #d8b476;
+}
+.sidebar ul li{
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+}
+.sidebar img {
+    border-radius: 50%;
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+}
+
+.main {
+    margin-left: 160px;
+}
+
+.sidebar a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.sidebar li:hover{
+    background-color: #fcefe3;
+    color: #000;
+}
+
+.tabla-desktop {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fcf6e6;
+    margin-left: -6px;
+}
+
+.tabla-desktop tr th {
+    background-color: #d8b476;
+    color: #000;
+    border: 1px solid #303030;
+    padding: 5px;
+    text-align: left;
+}
+
+.tabla-desktop tr td {
+    border: 1px solid #303030;
+    padding: 5px;
+}
+
+.tabla-desktop tr:nth-of-type(odd){
+    background-color: #f1e2d3;
+}
+
+.tabla-desktop input{
+    height: 25px;
+    background: transparent;
+    border: 1.2px solid #000;
+    border-radius: 5px;
+}
+.users{
+    margin-top: 1px;
+    margin-left: -8px;
+}
+
+.tabla-desktop span{
+    padding: 0 5px;
+}
+
+input[type="file"]{
+    padding: 5px;
+   background-color: #000;
+   color: #fff;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: medium;
+}
+
+
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.form-content h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+.form-content form{
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #cfbd9e;
+    border-radius: 25px;
+
+}
+
+.input-field {
+    
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.input-field input{
+    width: 550px;
+    height: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: #1f1e1e;
+    border-radius: 2px;
+    border: 0;
+}
+
+.btn-field button{
+    margin-top: 10px;
+    width: 80px;
+    font-size: 16px;
+}
+
+.btn-field input{
+    text-decoration: none;
+}
+
+button{
+    background-color: #5c95ff;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #aaf36f;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.elim{
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: #fff;
+    background-color: #c94c36;
+
+}
+.elim:hover{
+    background-color: #ff0800;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Oculta el input real */
+.file-input {
+    display: none;
+  }
+  
+  /* Estilos para la etiqueta personalizada */
+  .file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-label:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Opcional: muestra el nombre del archivo seleccionado */
+  #file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+
+
+/* Navbarsecundaria */
+
+.container-navbar {
+	background-color: #d8b476;
+    margin-left: -9px;
+    
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+    border: 1px #000;
+}
+
+.navbar .fa-bars {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	gap: 2rem;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu h1 {
+	margin: 0 60px;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.pagination a{
+
+    font-size: xx-large;
+    text-decoration: none;
+}

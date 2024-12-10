@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background: #d8b476;
+}
+.sidebar ul li{
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+}
+.sidebar img {
+    border-radius: 50%;
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+}
+
+.main {
+    margin-left: 160px;
+}
+
+.sidebar a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.sidebar li:hover{
+    background-color: #fcefe3;
+    color: #000;
+}
+
+
+/* Main */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-right: 10px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.info-product a{
+    border: none;
+    background: none;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.info-product a:hover{
+    transform: scale(1.1);
+    font-size: large;
+    font-weight: bold;
+}
+
+.container-navbar {
+	background-color: #d8b476;
+    margin-left: -9px;
+    
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+    border: 1px #000;
+}
+
+.navbar .fa-bars {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	gap: 2rem;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu h1 {
+	margin: 0 60px;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+
+.pagination{
+    padding: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.pagination a{
+    font-size: xx-large;
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
